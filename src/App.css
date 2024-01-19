@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.header {
+    background: #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-list{
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    margin-top: 10px;
+    padding: 40px;
+    height: 472px;
 }
-
-.App-link {
-  color: #61dafb;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #ccc;
+    font-size: x-large;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-content {
+    display: flex;
+    flex-direction: column;
+}
+.task-form {
+    display: flex;
+    gap: 15px;
+}
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 400px;
+}
+.task-button{
+    background: #4BC383;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+}
+button.remove {
+    height: 30px;
+    width: 75px;
+    background: #4BC383;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+ul.task-list {
+    list-style: none;
+    display: flex;
+    padding: 35px;
+    flex-direction: column;
+    gap: 15px;
+}
+li {
+    display: flex;
+    gap: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+button.update-button {
+    height: 30px;
+    width: 75px;
+    background: #4BC383;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.update-task {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.Show-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+button.edit-button {
+    height: 30px;
+    width: 75px;
+    background: #4BC383;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
 }
